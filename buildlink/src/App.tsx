@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { SlidersHorizontal } from 'lucide-react';
 import { AuthProvider, useAuth } from './contexts/AuthContext.tsx';
 import { Navbar } from './components/Layout/Navbar.tsx';
