@@ -331,7 +331,7 @@ export const SellerDashboard: React.FC = () => {
                 <h3 className="font-semibold text-gray-900 mb-1">{product.name}</h3>
                 <p className="text-sm text-gray-500 capitalize mb-2">{product.category.replace('_', ' ')}</p>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xl font-bold text-blue-600">${product.price}</span>
+                  <span className="text-xl font-bold text-blue-600">₹{product.price}</span>
                   <span className="text-sm text-gray-600">Stock: {product.stock_quantity}</span>
                 </div>
                 <div className="flex gap-2">

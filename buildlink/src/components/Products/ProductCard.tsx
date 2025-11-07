@@ -97,7 +97,7 @@ export const ProductCard: React.FC<Props> = ({ product, onWishlistToggle, isInWi
         <div className="flex items-center justify-between mb-3">
           <div>
             <p className="text-2xl font-bold text-cyan-400">
-              ${product.price.toFixed(2)}
+              ₹{product.price.toFixed(2)}
             </p>
             <p className="text-xs text-slate-400">per {product.unit}</p>
           </div>
