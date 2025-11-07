@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Maximize2, Minimize2 } from 'lucide-react';
-import type { Product } from '../../lib/supabase';
+import { type Product } from '../../lib/supabase';
 
 type Props = {
   products: Product[];
@@ -11,6 +11,8 @@ type Props = {
 export const MapView: React.FC<Props> = ({ products, userLocation, onLocationChange }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [mapError, setMapError] = useState(false);
+
+
 
   useEffect(() => {
     if (navigator.geolocation && !userLocation) {

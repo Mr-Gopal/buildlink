@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Star, MapPin, Heart, Package, CheckCircle, XCircle } from 'lucide-react';
-import { type Product } from '../../lib/supabase.ts';
-import { useAuth } from '../../contexts/AuthContext.tsx';
-import { supabase } from '../../lib/supabase.ts';
+import { MapPin, Heart, Package, CheckCircle, XCircle } from 'lucide-react';
+import { type Product } from '../../lib/supabase';
+import { useAuth } from '../../contexts/AuthContext';
+import { supabase } from '../../lib/supabase';
 
 type Props = {
   product: Product;
