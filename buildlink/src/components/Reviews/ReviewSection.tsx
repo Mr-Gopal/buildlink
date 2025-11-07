@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Star } from 'lucide-react';
-import { supabase, Review } from '../../lib/supabase';
-import { useAuth } from '../../contexts/AuthContext';
+import { supabase, type Review } from '../../lib/supabase.ts';
+import { useAuth } from '../../contexts/AuthContext.tsx';
 
 type Props = {
   productId: string;

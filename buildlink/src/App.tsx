@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { SlidersHorizontal } from 'lucide-react';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
-import { Navbar } from './components/Layout/Navbar';
-import { Sidebar } from './components/Layout/Sidebar';
-import { FilterPanel, FilterOptions } from './components/Layout/FilterPanel';
-import { Footer } from './components/Layout/Footer';
-import { MapView } from './components/Map/MapView';
-import { SearchBar } from './components/Search/SearchBar';
-import { ProductList } from './components/Products/ProductList';
-import { SellerDashboard } from './components/Dashboard/SellerDashboard';
-import { supabase, Product } from './lib/supabase';
+import { AuthProvider, useAuth } from './contexts/AuthContext.tsx';
+import { Navbar } from './components/Layout/Navbar.tsx';
+import { Sidebar } from './components/Layout/Sidebar.tsx';
+import { FilterPanel, type FilterOptions } from './components/Layout/FilterPanel.tsx';
+import { Footer } from './components/Layout/Footer.tsx';
+import { MapView } from './components/Map/MapView.tsx';
+import { SearchBar } from './components/Search/SearchBar.tsx';
+import { ProductList } from './components/Products/ProductList.tsx';
+import { SellerDashboard } from './components/Dashboard/SellerDashboard.tsx';
+import { supabase, type Product } from './lib/supabase.ts';
 
 function AppContent() {
   const { profile, loading: authLoading } = useAuth();

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, User, LogOut, Store, Heart } from 'lucide-react';
-import { useAuth } from '../../contexts/AuthContext';
-import { AuthModal } from '../Auth/AuthModal';
+import { useAuth } from '../../contexts/AuthContext.tsx';
+import { AuthModal } from '../Auth/AuthModal.tsx';
 
 type Props = {
   onMenuClick: () => void;

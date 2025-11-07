@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Edit2, Trash2, X } from 'lucide-react';
-import { supabase, Product } from '../../lib/supabase';
-import { useAuth } from '../../contexts/AuthContext';
+import { supabase, type Product } from '../../lib/supabase.ts';
+import { useAuth } from '../../contexts/AuthContext.tsx';
 
 export const SellerDashboard: React.FC = () => {
   const { user } = useAuth();

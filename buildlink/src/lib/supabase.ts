@@ -24,6 +24,7 @@ export type Profile = {
 };
 
 export type Product = {
+  reviews: any;
   id: string;
   seller_id: string;
   category: string;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Grid, List } from 'lucide-react';
-import { Product } from '../../lib/supabase';
+import { type Product } from '../../lib/supabase.ts';
 import { ProductCard } from './ProductCard';
 
 type Props = {

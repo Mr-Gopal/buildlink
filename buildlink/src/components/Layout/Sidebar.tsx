@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { X, Star, MapPin, Award } from 'lucide-react';
-import { supabase } from '../../lib/supabase';
+import { supabase } from '../../lib/supabase.ts';
 
 type Props = {
   isOpen: boolean;

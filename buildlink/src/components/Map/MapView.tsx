@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Maximize2, Minimize2 } from 'lucide-react';
-import { Product } from '../../lib/supabase';
+import { type Product } from '../../lib/supabase.ts';
 
 type Props = {
   products: Product[];
